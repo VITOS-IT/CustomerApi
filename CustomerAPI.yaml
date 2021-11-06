@@ -1,0 +1,33 @@
+﻿apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: customerapi
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: CustomerAPI
+  template:
+    metadata:
+      labels:
+        app: CustomerAPI
+    spec:
+      containers:
+      - name: aksg3cr
+        image: aksg3cr.azurecr.io/aksg3cr:latest
+        ports:
+        - containerPort: 8080
+      imagePullSecrets:
+      - name: dsconfigsn
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: customerapi
+spec:
+  type: LoadBalancer
+  ports:
+  - port: 80
+  selector:
+    app: CustomerAPI
