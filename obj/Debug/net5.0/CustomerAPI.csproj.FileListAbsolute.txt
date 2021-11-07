@@ -240,3 +240,4 @@ D:\Participants\Bank\CourseProject (1)\CustomerAPI\obj\Debug\net5.0\CustomerAPI.
 D:\Participants\Bank\CourseProject (1)\CustomerAPI\obj\Debug\net5.0\ref\CustomerAPI.dll
 D:\Participants\Bank\CourseProject (1)\CustomerAPI\obj\Debug\net5.0\CustomerAPI.pdb
 D:\Participants\Bank\CourseProject (1)\CustomerAPI\obj\Debug\net5.0\CustomerAPI.genruntimeconfig.cache
+D:\Participants\Bank\CourseProject (1)\CustomerAPI\bin\Debug\net5.0\CustomerAPI.yaml
