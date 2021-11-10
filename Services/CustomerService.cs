@@ -94,7 +94,8 @@ namespace CustomerAPI.Services
                 AccountCreationStatus creationStatus = null;
                 using (var client = new HttpClient())
                 {
-                    client.BaseAddress = new Uri("https://bankcustomerapi.azurewebsites.net/api/account/");
+                    //client.BaseAddress = new Uri("https://bankcustomerapi.azurewebsites.net/api/account/");
+                    client.BaseAddress = new Uri("https://bankaccountapi.azurewebsites.net/api/account/");
                     client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer");
                     var postTask = await client.PostAsJsonAsync("createAccount", accountDTO);
                     if (postTask.IsSuccessStatusCode)
